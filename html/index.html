@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html>
 <head>
   <title>Gibson ES-333</title>
   <meta charset="utf-8">
@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
   <link href="..\css\style.css" rel="stylesheet">
+  <link href="..\css\modal.css" rel="stylesheet">
 </head>
 
 <body>
@@ -19,12 +20,12 @@
 
     <nav>
       <ul id="nav">
-        <li><a id="headlogo" href="#logo">Intro</a></li>
-        <li><a id="headcolors" href="#colors">Colors</a></li>
-        <li><a id="headspecs" href="#specs">Specs</a></li>
-        <li><a id="headmods"href="#mods">Modifications</a></li>
-        <li><a id="headdelonge"href="#delonge">Tom DeLonge</a></li>
-        <li><a id="headbuy" href="#buy">Buy One</a></li>
+        <li><a id="headintro" href="#logo" class="navList">Intro</a></li>
+        <li><a id="headcolors" href="#colors" class="navList">Colors</a></li>
+        <li><a id="headspecs" href="#specs" class="navList">Specs</a></li>
+        <li><a id="headmods"href="#mods" class="navList">Modifications</a></li>
+        <li><a id="headdelonge"href="#delonge" class="navList">Tom DeLonge</a></li>
+        <li><a id="headbuy" href="#buy" class="navList">Buy One</a></li>
       </ul>
     </nav>
   </header>
@@ -44,11 +45,11 @@
 
       <img class="responsiveImage" src="../images/gibson-es-333-2433926.jpg" alt="Gibson ES-333 back pannel">
 
-      <p>At the time, stores were selling these guitars for hundreds of dollars, rather than thousands, and represented a great deal. The cream binding, thin finish and mint-green tuner heads gave the guitar the look and feel of a vintage instrument, and the Les Paul pickups really packed a punch.</p>
+      <p>At the time the RRP was $1200,but they were often reduced, and represented a great deal. The cream binding, thin finish and mint-green tuner heads gave the guitar the look and feel of a vintage instrument, and the Les Paul pickups really packed a punch.</p>
 
-      <p>Sadly the ES-333 was discontinued in 2005, giving way to the ES-335 studio which was reissued in 2012. Despite their short production time, the ES-333 sold well, and used examples can be found fairly easily.</p>
+      <p>Sadly the ES-333 was discontinued in 2005, giving way to the ES-335 studio which was reissued in 2013. Despite their short production time, the ES-333 sold well, and used examples can be found fairly easily.</p>
 
-      <p>In recent years their values have increased, but they are still more affordable then the ES-335, and still represent a bargain guitar.</p>
+      <p>In recent years their values have increased, but they are still more affordable than an ES-335, and still represent a bargain guitar.</p>
     </div>
 
     <div id="colors" class="anchor">
@@ -57,17 +58,18 @@
       <p>The ES-333 was finished in satin nitrocellulose, available in four colors: Cherry Red, Sunburst, Faded Brown, and Natural.</p>
 
       <div class="flex-container">
-        <img src="../images/IMG_9689_0d32c51f-9922-4f55-9fae-2acc982e87dc_1024x1024.jpg">
+        <img id="modal1" src="../images/IMG_9689_0d32c51f-9922-4f55-9fae-2acc982e87dc_1024x1024.jpg" alt="Cherry Red">
 
-        <img src="../images/IMG_0429_f9bf8b3c-46c2-408c-97a4-3bcec927f40c_1024x1024 (1).jpg">
+        <img id="modal2" src="../images/IMG_0429_f9bf8b3c-46c2-408c-97a4-3bcec927f40c_1024x1024 (1).jpg" alt="Sunburst">
 
-        <img src="../images/IMG_1724_1024x1024.jpg">
+        <img id="modal3" src="../images/IMG_1724_1024x1024.jpg" alt="Faded Brown">
 
-        <img src="../images/IMG_0870_4ff2c27c-0e70-487f-8157-0f21d8269461_1024x1024.jpg">
+        <img id="modal4" src="../images/IMG_0870_4ff2c27c-0e70-487f-8157-0f21d8269461_1024x1024.jpg" alt="Natural">
       </div>
     </div>
 
-    <div id="specs">
+
+    <div id="specs" class="anchor">
       <h2>Specifications</h2>
       <hr>
       <div class="body-specs">
@@ -199,14 +201,14 @@
       </div>
     </div>
 
-    <div id="mods">
+    <div id="mods" class="anchor">
       <h2>Modifications</h2>
       <hr>
       <p>With the addition of a pickguard, nickel pickup covers and top-hat control knobs, the ES-333 can be to look like an ES-335. The cream binding, thin finish and green tuners lend themselves very well towards a vintage look. The satin finish can be polished with a fine cutting compound, and buffed to a mirror shine with an automotive wax.</p>
 
       <p>(Pro tip: using wax on the back of the neck eliminates the stickiness of the nitro finish. You'll have to reapply it fairly frequently though!)</p>
 
-      <img src="../images/f36798afc3850ee3e33017e6d8602bd7.jpg" class="responsiveImage">
+      <img id="es335" src="../images/f36798afc3850ee3e33017e6d8602bd7.jpg" class="responsiveImage" alt="ES-333 vs 335">
 
       <p>Check out this ES-333 next to a 1966 ES-335. Looks pretty good, doesn't it?</p>
 
@@ -215,23 +217,39 @@
       <p>Other electronic modifications include adding a coil split, or even adding a full varitone circuit, à la ES-345.</p>
     </div>
 
-    <div id="delonge">
+    <div id="delonge" class="anchor">
       <h2>Tom DeLonge Signature Model</h2>
       <hr>
-      <p>Placeholder text</p>
+      <p>In 2003 Gibson released a production model of Tom DeLonge's signature model. It was quite different to the normal ES-333:</p>
+
+      <img id="tomdelonge" class="responsiveImage" src="../images/epiphone-tom-delonge-es-333-103299.jpg" alt="Tom DeLonge Signature model">
+
+      <p>The guitar was finished in satin "Olive green", with a cream racing stripe and binding, and the headstock was finished with a wooden veneer. The minamilist theme of the ES-333 was taken a step further - there was only a single "Dirty Fingers" pickup in the bridge position, controlled by a single volume knob.</p>
+
+      <p>A cheaper Epiphone version was also released. This was made in China, but still used the Gibson Dirty Fingers pickup.</p>
     </div>
 
-    <div id="buy">
+    <div id="buy" class="anchor">
       <h2>Buy an ES-333</h2>
       <hr>
-      <p>Despite their short production run, the ES-333 was a popular guitar and can often be found for sale on online. The majority are in the USA, but Gibson sold them worldwide, so finding one nearby is just a matter of time.</p>
+      <p>Despite their short production run, their relatively low price made the ES-333 a popular guitar, and can often be found for sale on online. The majority are in the USA, but they were sold worldwide, so finding one nearby is just a matter of time.</p>
 
-      <p>The best places to look would be <a href="https://reverb.com/marketplace?query=gibson%20es%20333">Reverb</a> and <a href="https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw=gibson+es+333&_sacat=0">eBay</a>, but keep your eye on forums and social media groups, and even your local music store - you never know when one will pop up.</p>
+      <p>The best places to look are <a href="https://reverb.com/marketplace?query=gibson%20es%20333" target="_blank">Reverb</a> and <a href="https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw=gibson+es+333&_sacat=0" target="_blank">eBay</a>, but keep your eye on forums and social media groups, and even your local music store - you never know when one will pop up.</p>
 
-      <p>Prices have varied $800 to $1400 range, depeding on their condition and location.</p>
+      <p>Prices vary $800 to $1400, depeding on their condition and location. The Gibson Tom DeLonge model is much more expensive, expect to spend around $3000 to $4000.</p>
       <br><br>
     </div>
   </main>
+
+  <!-- Modal Image -->
+  <div id="modal">
+    <img src="" id="modalImage">
+    <div id="modalCaption"></div>
+    <div id="modalClose">&times;</div>
+  </div>
+
+  <!-- Top button -->
+  <a href="#logo" id="topbutton">&#171;</a>
 
 </body>
 <footer>
@@ -244,5 +262,6 @@
 
 <script src="../js/stickynav.js"></script>
 <script src="../js/navbar.js"></script>
+<script src="../js/modal.js"></script>
 
 </html>

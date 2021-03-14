@@ -17,7 +17,7 @@ header {
 h2 {
   color: goldenrod;
   margin-bottom: 0;
-  padding-top: 30px;
+  margin-top: 50px; // Offset top to account for navbar
 }
 
 p {
@@ -35,8 +35,6 @@ a, a:visited {
 a:hover {
   text-decoration: underline;
 }
-
-
 
 #title {
   position: relative;
@@ -65,8 +63,8 @@ a:hover {
   font-size: 1.4em;
   background-color: black;
   border-bottom: 4px solid goldenrod;
+  z-index: 1;
 }
-
 
 #nav li {
   background-color: black;
@@ -111,12 +109,12 @@ main {
 hr {
   padding: 0;
   margin: 0;
+  border-top: 1px solid lightgrey;
 }
 
 .responsiveImage {
   display: block;
   max-width: 100%;
-
   margin: 0 auto;
 }
 
@@ -172,6 +170,11 @@ tr td:nth-child(2) {
    text-align: right;
 }
 
+#es335 {
+  max-height: 80vh;
+  width: auto;
+}
+
 footer {
     border-top: 4px solid goldenrod;
 }
@@ -205,19 +208,21 @@ footer p {
 }
 
 #topbutton {
-  background-image: url("../images/23714.png");
-
+  display: block;
   visibility: hidden;
-  background-size: cover;
   position: fixed;
-  width: 50px;
-  height: 50px;
-  right: 20px;
-  bottom: 20px;
-  opacity: 0.5;
+  padding: 0;
+  margin: 0;
+  bottom: 5px;
+  right: 5px;
+  font-size: 5em;
+  color: grey;
+  transform: rotate(90deg);
 }
 
-
+#topbutton:hover {
+  text-decoration: none;
+}
 
 @media only screen and (max-width: 600px) {
   #title {
@@ -269,6 +274,4 @@ footer p {
   #specs img {
     display: none;
   }
-
-
 }

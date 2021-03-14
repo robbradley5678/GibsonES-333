@@ -1,28 +1,20 @@
-// Navbar selectors
-const inrtoHead = document.getElementById("headlogo");
-const colorHead = document.getElementById("headcolors");
-const modsHead = document.getElementById("headmods");
-const tomHead = document.getElementById("headdelonge");
-const buyHead = document.getElementById("headbuy");
-const headArr = [introHead, colorHead, modsHead, tomHead, buyHead];
+//Changes color of navbar depending on scroll position
 
-//Page id selectors
-const into = document.getElementById("logo");
-const colors = document.getElementById("colors");
-const mods = document.getElementById("mods");
-const delonge = document.getElementById("delonge");
-const buy = document.getElementById("buy");
-const navArr = [inro, colors, mods, delonge, buy];
+// Get page section anchors
+const anchors = Array.from( document.getElementsByClassName('anchor'));
 
-window.onscroll = () => {
-navArr.forEach(element => {
-  element.onmouseover = () => {
-    colorHead.style.color = "goldenrod";
-  };
-})
+// Get navbar items
+const navList = Array.from( document.getElementsByClassName('navList'));
+
+for (let i = 0; i < anchors.length; i++) {
+  anchors[i].onmouseover = () => {
+    navList[i].style.color = "goldenrod";
+    navList[i].style.fontWeight = "bold";
+  }
 };
 
-
-colors.onmouseout = () => {
-  colorHead.style.color = "white";
-};
+for (let i = 0; i < anchors.length; i++) {
+  anchors[i].onmouseout = () => {
+    navList[i].style = "";
+  }
+}
